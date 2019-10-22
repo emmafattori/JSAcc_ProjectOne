@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emma Project 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+<!-- Hi instructors!! I hope you enjoy my project one. I used to be a project manager and was always having to adjust project dates, which is where the inspiration for my project came from. I would like to add to this moving forward, but this was the MVP I could create for now. Looking forward to hearing some suggestions for improvement. -->
+
+<!-- Explanation of the project/instructions for the user -->
+
+<div class = "wrapper">
+    <header>
+        <h1>Client Happiness Predictor</h1>
+   
+
+    <h2>
+        Input the details of your project below, to determine how happy your client will be when the project is submitted.
+    </h2>
+    </header>
+<!-- End of 'Explaination of the Application' -->
+<!-- User Input Form -->
+
+    <form action="projectManager buttonPressed">
+<!-- Question 1 -->
+        <label for="input1">What is the name/purpose of your project?</label>
+        <input class = "question1" type="text" name="input1" id="input1" placeholder="Enter project name">
+<!-- Question 2 -->
+        <label for="input2">How many days left until your project due date?</label>
+        <input class = "question2"type="number" name="input2" id="input2" placeholder="Enter a number" required>
+<!-- Question 3 -->
+        <label for="input3">How many days are required to complete the rest of your project?</label>
+        <input class = "question3" type="number" name="input3" id="input3" placeholder="Enter a number" required>
+<!-- Questions 4 -->
+        <label for="input4">What is your client's name?</label>
+        <input class = "question4" type="text" name="input4" id="input4" placeholder="Enter client Name" required>
+
+    <div class = buttonHolder>
+        <input class = "submit" type="submit" id = button value="Check Project Status">
+        <input type="reset" class = reset id = reset value = "Reset">
+    </div>
+    
+   
+<!-- End of user input form -->
+ <!-- Beginning of Client Happiness Outcome -->
+<div class="results">
+    <div class="happyClient hide">
+        <h2>Congratulations! <span class = hap2></span> will be happy to know that <span class = hap1></span> will be delivered on time, by the due date.</h2>
+
+        <i class="far fa-smile"></i>
+       
+
+
+    </div>
+    <div class="mediumClient hide">
+        <h2>Beware! <span class = med2></span> should be worried, and <span class = med1></span> is at risk to be late.</h2>
+        <i class="far fa-meh"></i>
+        
+    </div>
+    <div class="madClient hide">
+        <h2>Attention! <span class = mad1></span> will not be ready before the due date, <span class = mad2></span> will be mad.</h2>
+        <i class="far fa-frown"></i>
+        
+    </div>
+
+
+
+</div>
+</div>
+</form>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="Project1_EmmaFattori.js"></script>
+    
+
+    
+
+</body>
+</html>
